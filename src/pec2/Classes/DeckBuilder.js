@@ -3,6 +3,7 @@ export default class DeckBuilder {
         this.deckOfCards = [];
         this.cardsSessionCache = [];
         this.fetchedClassList = [];
+        this.gameSelectorsOptions = {};
         this.selectors = {
             class: '',
             cardSet: 'all',
@@ -11,6 +12,10 @@ export default class DeckBuilder {
             rarity: 'all',
             race: 'all'
         };
+    }
+
+    getSelectors() {
+        return this.selectors;
     }
 
     addClassToCache(newClass) {
@@ -47,13 +52,21 @@ export default class DeckBuilder {
         const keysSelector = Object.keys(this.selectors);
         keysSelector.splice(0, 1);
 
-        for (let keys of keysSelector) {
-            if (this.selectors[keys] !== 'all') {
+        for (let key of keysSelector) {
+            if (this.selectors[key] !== 'all') {
                 filteredResult = filteredResult.filter((cards) => {
-                    return cards[keys] === this.selectors[keys];
+                    return cards[key] === this.selectors[key];
                 });
             }
         }
         return filteredResult;
+    }
+
+    saveSelectorsOptions(infoSelectors) {
+        this.gameSelectorsOptions = infoSelectors;
+    }
+
+    getSelectorsOptions() {
+        return this.gameSelectorsOptions;
     }
 }

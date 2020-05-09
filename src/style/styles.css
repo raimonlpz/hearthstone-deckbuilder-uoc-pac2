@@ -9,6 +9,12 @@ body {
   );
 }
 
+@media (max-width: 1200px) {
+  #hearthstone {
+    display: none !important;
+  }
+}
+
 .mt3 {
   padding: 2px;
 }

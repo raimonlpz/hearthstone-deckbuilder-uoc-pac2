@@ -25,7 +25,7 @@
             <h2 id="selectors-resum" class="fw2 f4 lh-copy mt0 mb3">
             </h2>
           </article>
-          <img src="./src/assets/hearthstone.png" class="imagedec">
+          <img src="./src/assets/hearthstone.png" id="hearthstone" class="imagedec">
         
         </header>
       
@@ -39,16 +39,6 @@
                   class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
                   id="class"
                 >
-                  <option value="Druid" selected="selected">Druid</option>
-                  <option value="Hunter">Hunter</option>
-                  <option value="Mage">Mage</option>
-                  <option value="Paladin">Paladin</option>
-                  <option value="Priest">Priest</option>
-                  <option value="Rogue">Rogue</option>
-                  <option value="Shaman">Shaman</option>
-                  <option value="Warlock">Warlock</option>
-                  <option value="Warrior">Warrior</option>
-                  <option value="Dream">Dream</option>
                 </select>
               </div>
               <div class="mt3">
@@ -57,41 +47,18 @@
                   class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
                   id="set"
                 >
-                  <option value="all" selected="selected">all</option>
-                  <option value="Basic">Basic</option>
-                  <option value="Classic">Classic</option>
-                  <option value="Credits">Credits</option>
-                  <option value="Naxxramas">Naxxramas</option>
-                  <option value="Debug">Debug</option>
-                  <option value="Goblins vs Gnomes">Goblins vs Gnomes</option>
-                  <option value="Missions">Missions</option>
-                  <option value="Promotion">Promotion</option>
-                  <option value="Reward">Reward</option>
-                  <option value="System">System</option>
-                  <option value="Blackrock Mountain">Blackrock Mountain</option>
-                  <option value="Hero Skins">Hero Skins</option>
-                  <option value="Tavern Brawl">Tavern Brawl</option>
-                  <option value="The Grand Tournament">The Grand Tournament</option>
+                <option value="all" selected="selected">all</option>
                 </select>
               </div>
               <div class="mt3">
                 <label class="db fw6 lh-copy f6" for="types">Type</label>
                 <select
                   class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
-                  id="types"
+                  id="type"
                 >
                   <option value="all" selected="selected">all</option>
-                  <option value="Basic">Hero</option>
-                  <option value="Minion">Minion</option>
-                  <option value="Spell">Spell</option>
-                  <option value="Enchantment">Enchantment</option>
-                  <option value="Weapon">Weapon</option>
-                  <option value="Hero Power">Hero Power</option>
                 </select>
               </div>
-
-           
-
               <div class="mt3">
                 <label class="db fw6 lh-copy f6" for="race">Race</label>
                 <select
@@ -99,13 +66,6 @@
                   id="race"
                 >
                   <option value="all" selected="selected">all</option>
-                  <option value="Demon">Demon</option>
-                  <option value="Dragon">Dragon</option>
-                  <option value="Mech">Mech</option>
-                  <option value="Murloc">Murloc</option>
-                  <option value="Beast">Beast</option>
-                  <option value="Pirate">Pirate</option>
-                  <option value="Totem">Totem</option>
                 </select>
               </div>
 
@@ -116,11 +76,8 @@
                   id="faction"
                 >
                   <option value="all" selected="selected">all</option>
-                  <option value="Horde">Horde</option>
-                  <option value="Alliance">Alliance</option>
-                  <option value="Neutral">Neutral</option>
-                </select>
               </div>
+            </select>
 
               <div class="mt3">
                 <label class="db fw6 lh-copy f6" for="rarity">Quality / Rarity</label>
@@ -129,11 +86,7 @@
                   id="rarity"
                 >
                   <option value="all" selected="selected">all</option>
-                  <option value="Free">Free</option>
-                  <option value="Common">Common</option>
-                  <option value="Rare">Rare</option>
-                  <option value="Epic">Epic</option>
-                  <option value="Legendary">Legendary</option>
+           
                 </select>
               </div>
             </fieldset>
